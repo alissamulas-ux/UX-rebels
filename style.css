@@ -1,0 +1,280 @@
+/* Stili ispirati al tema Lux di Bootswatch */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header e logo */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.site-title {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Menu di navigazione */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    display: block;
+    transition: all 0.3s;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #c39f76;
+    border-bottom: 2px solid #c39f76;
+}
+
+/* Sottomenu */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 0;
+    margin-top: 2px;
+    border: none;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.submenu li a:hover {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #f0f0f0;
+    color: #c39f76;
+}
+
+/* Sezioni della pagina */
+section {
+    padding: 70px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 60px;
+    height: 2px;
+    background-color: #c39f76;
+    transform: translateX(-50%);
+}
+
+h3 {
+    margin: 30px 0;
+    color: #343a40;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Sezione Chi Siamo */
+.chi-siamo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+.chi-siamo p {
+    color: #555;
+    font-weight: 300;
+}
+
+/* Sezione Menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 4px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h4 {
+    color: #c39f76;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.menu-item .ingredienti {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.menu-item .prezzo {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 60px 0 30px;
+    color: #343a40;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Sezione Prenota */
+.prenota {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.prenota p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+    font-weight: 300;
+}
+
+.tel-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c39f76;
+    color: white;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.tel-link:hover {
+    background-color: #a38363;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

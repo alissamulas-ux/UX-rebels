@@ -1,22 +1,161 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <title>Titolo della pagina</title>
+    <title>Pizzeria Da Luigi - La vera pizza napoletana</title>
     <meta charset="UTF-8">
     <meta name="author" content="TeamSystem" />
     <meta name="description"
-        content="Questa è una descrizione per i motori di ricerca che non sarà mai SEO Compliant" />
-    <meta name="keywords" content="Parola chiave uno, parola chiave due, parola chiave 3" />
+        content="Pizzeria Da Luigi, la vera pizza napoletana a lievitazione naturale dal 1985" />
+    <meta name="keywords" content="Pizza napoletana, pizzeria, ristorante, menu, prenotazioni" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>prova</h1>
-    <!--
-    ELEMNTI HTML NATIVI: https://html.spec.whatwg.org/ oppure da Mozzilla (non ufficiale, ma autorevole): https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-    UNICODES: https://en.wikipedia.org/wiki/List_of_Unicode_characters
-    -->
-</body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="#c39f76" />
+                    <circle cx="50" cy="50" r="35" fill="#f9d949" />
+                    <circle cx="30" cy="40" r="5" fill="#8b4513" />
+                    <circle cx="45" cy="30" r="5" fill="#8b4513" />
+                    <circle cx="60" cy="45" r="5" fill="#8b4513" />
+                    <circle cx="70" cy="30" r="5" fill="#8b4513" />
+                    <circle cx="40" cy="60" r="5" fill="#8b4513" />
+                    <circle cx="65" cy="65" r="5" fill="#8b4513" />
+                </svg>
+                <h1 class="site-title">Pizzeria Da Luigi</h1>
+            </div>
+        </div>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li class="has-submenu">
+                <a href="#menu">Menu</a>
+                <ul class="submenu">
+                    <li><a href="#pizze-tradizionali">Pizze tradizionali</a></li>
+                    <li><a href="#pizze-speciali">Pizze speciali</a></li>
+                    <li><a href="#cantina">La cantina</a></li>
+                </ul>
+            </li>
+            <li><a href="#prenota">Prenota</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="chi-siamo">
+            <h2>Chi Siamo</h2>
+            <div class="chi-siamo">
+                <p>Benvenuti alla Pizzeria Da Luigi, un angolo di Napoli nel cuore della città dal 1985. La nostra storia inizia quando il nonno Luigi, emigrato dal sud Italia, decise di portare con sé l'arte della vera pizza napoletana.</p>
+                <br>
+                <p>Ogni pizza che serviamo è frutto di una tradizione familiare tramandata per generazioni. Il nostro impasto, preparato con farina di grano tenero tipo "00", viene fatto lievitare naturalmente per almeno 24 ore, conferendo alla pizza quella leggerezza e digeribilità che ci contraddistingue.</p>
+                <br>
+                <p>I nostri ingredienti sono selezionati con cura: pomodori San Marzano DOP, mozzarella di bufala campana, olio extravergine d'oliva italiano e basilico fresco del nostro orto. Nel forno a legna, costruito dai maestri artigiani napoletani, le nostre pizze cuociono a temperature che superano i 450°C, garantendo quel sapore inconfondibile della vera pizza napoletana.</p>
+                <br>
+                <p>Da tre generazioni, la famiglia Da Luigi mantiene viva la passione per la pizza e l'ospitalità italiana. Vieni a trovarci e scopri perché i nostri clienti tornano sempre!</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Il Nostro Menu</h2>
+            
+            <h3 class="section-title" id="pizze-tradizionali">Pizze Tradizionali</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <h4>Margherita</h4>
+                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, basilico fresco, olio EVO</p>
+                    <p class="prezzo">€ 7,50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Marinara</h4>
+                    <p class="ingredienti">Pomodoro San Marzano DOP, aglio, origano, basilico, olio EVO</p>
+                    <p class="prezzo">€ 6,00</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Napoletana</h4>
+                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, acciughe, olive nere, capperi, origano, olio EVO</p>
+                    <p class="prezzo">€ 8,50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Capricciosa</h4>
+                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, prosciutto cotto, funghi, carciofi, olive nere, olio EVO</p>
+                    <p class="prezzo">€ 9,50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Diavola</h4>
+                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, salame piccante, peperoncino, olio EVO</p>
+                    <p class="prezzo">€ 8,50</p>
+                </div>
+            </div>
+            
+            <h3 class="section-title" id="pizze-speciali">Pizze Speciali</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <h4>Carrettiera</h4>
+                    <p class="ingredienti">Base bianca, salsiccia sbriciolata, friarielli, provola affumicata, peperoncino, olio EVO</p>
+                    <p class="prezzo">€ 10,50</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Vesuvio</h4>
+                    <p class="ingredienti">Pomodorini del piennolo, bufala DOP (dopo cottura), rucola, scaglie di grana, prosciutto crudo di Parma 24 mesi, olio EVO</p>
+                    <p class="prezzo">€ 12,00</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Tartufo Reale</h4>
+                    <p class="ingredienti">Base bianca, mozzarella di bufala, funghi porcini, carpaccio di tartufo nero, olio al tartufo</p>
+                    <p class="prezzo">€ 14,50</p>
+                </div>
+            </div>
+            
+            <h3 class="section-title" id="cantina">La Cantina</h3>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <h4>Prosecco DOC Valdobbiadene</h4>
+                    <p class="ingredienti">Origine: Veneto</p>
+                    <p class="prezzo">€ 22,00</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Falanghina del Sannio DOC</h4>
+                    <p class="ingredienti">Origine: Campania</p>
+                    <p class="prezzo">€ 18,00</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Amarone della Valpolicella DOCG</h4>
+                    <p class="ingredienti">Origine: Veneto</p>
+                    <p class="prezzo">€ 35,00</p>
+                </div>
+                
+                <div class="menu-item">
+                    <h4>Primitivo di Manduria DOC</h4>
+                    <p class="ingredienti">Origine: Puglia</p>
+                    <p class="prezzo">€ 20,00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prenota">
+            <h2>Prenota</h2>
+            <div class="prenota">
+                <p>Riceviamo prenotazioni solo dalle 01:00 alle 03:00</p>
+                <a href="tel:+393331234567" class="tel-link">Chiama ora: +39 333 123 4567</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pizzeria Da Luigi - La vera pizza napoletana dal 1985</p>
+    </footer>
+</body>
 </html>
