@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Pizzeria Da Luigi - La vera pizza napoletana</title>
+    <title>Pizza Ribelle - Pizza gourmet con ingredienti locali</title>
     <meta charset="UTF-8">
     <meta name="author" content="TeamSystem" />
     <meta name="description"
-        content="Pizzeria Da Luigi, la vera pizza napoletana a lievitazione naturale dal 1985" />
-    <meta name="keywords" content="Pizza napoletana, pizzeria, ristorante, menu, prenotazioni" />
+        content="Pizza Ribelle, pizza gourmet con ingredienti locali e biologici dal 2010" />
+    <meta name="keywords" content="Pizza gourmet, pizzeria, ristorante, menu, prenotazioni, biologico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        b {
+            font-weight: 800;
+            color: #5a3921;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="logo-container">
-                <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="45" fill="#c39f76" />
-                    <circle cx="50" cy="50" r="35" fill="#f9d949" />
-                    <circle cx="30" cy="40" r="5" fill="#8b4513" />
-                    <circle cx="45" cy="30" r="5" fill="#8b4513" />
-                    <circle cx="60" cy="45" r="5" fill="#8b4513" />
-                    <circle cx="70" cy="30" r="5" fill="#8b4513" />
-                    <circle cx="40" cy="60" r="5" fill="#8b4513" />
-                    <circle cx="65" cy="65" r="5" fill="#8b4513" />
-                </svg>
-                <h1 class="site-title">Pizzeria Da Luigi</h1>
+                <img src="Pizza.png" alt="Logo Pizza Ribelle" class="logo" style="width: 200px; height: 100px; object-fit: contain; border-radius: 0;">
+                <h1 class="site-title">Pizza Ribelle</h1>
             </div>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#chi-siamo">Chi Siamo</a></li>
             <li class="has-submenu">
-                <a href="#menu">Menu</a>
+                <a href="#menu">Menù</a>
                 <ul class="submenu">
-                    <li><a href="#pizze-tradizionali">Pizze tradizionali</a></li>
-                    <li><a href="#pizze-speciali">Pizze speciali</a></li>
+                    <li><a href="#pizze-tradizionali">Pizze Classiche</a></li>
+                    <li><a href="#pizze-speciali">Pizze Ribelli</a></li>
                     <li><a href="#cantina">La cantina</a></li>
                 </ul>
             </li>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
             <li><a href="#prenota">Prenota</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <section id="chi-siamo">
-            <h2>Chi Siamo</h2>
-            <div class="chi-siamo">
-                <p>Benvenuti alla Pizzeria Da Luigi, un angolo di Napoli nel cuore della città dal 1985. La nostra storia inizia quando il nonno Luigi, emigrato dal sud Italia, decise di portare con sé l'arte della vera pizza napoletana.</p>
-                <br>
-                <p>Ogni pizza che serviamo è frutto di una tradizione familiare tramandata per generazioni. Il nostro impasto, preparato con farina di grano tenero tipo "00", viene fatto lievitare naturalmente per almeno 24 ore, conferendo alla pizza quella leggerezza e digeribilità che ci contraddistingue.</p>
-                <br>
-                <p>I nostri ingredienti sono selezionati con cura: pomodori San Marzano DOP, mozzarella di bufala campana, olio extravergine d'oliva italiano e basilico fresco del nostro orto. Nel forno a legna, costruito dai maestri artigiani napoletani, le nostre pizze cuociono a temperature che superano i 450°C, garantendo quel sapore inconfondibile della vera pizza napoletana.</p>
-                <br>
-                <p>Da tre generazioni, la famiglia Da Luigi mantiene viva la passione per la pizza e l'ospitalità italiana. Vieni a trovarci e scopri perché i nostri clienti tornano sempre!</p>
-            </div>
-        </section>
-
         <section id="menu">
-            <h2>Il Nostro Menu</h2>
+            <h2>Il Nostro Menù</h2>
             
-            <h3 class="section-title" id="pizze-tradizionali">Pizze Tradizionali</h3>
+            <h3 class="section-title" id="pizze-tradizionali">Pizze Classiche</h3>
             <div class="menu-container">
                 <div class="menu-item">
-                    <h4>Margherita</h4>
-                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, basilico fresco, olio EVO</p>
-                    <p class="prezzo">€ 7,50</p>
+                    <h4>Ribelle Margherita</h4>
+                    <p class="ingredienti">Pomodoro biologico, mozzarella fior di latte, basilico fresco, olio EVO biologico</p>
+                    <p class="prezzo"><b>€ 8,50</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Marinara</h4>
-                    <p class="ingredienti">Pomodoro San Marzano DOP, aglio, origano, basilico, olio EVO</p>
-                    <p class="prezzo">€ 6,00</p>
+                    <h4>Marinara Selvaggia</h4>
+                    <p class="ingredienti">Pomodoro biologico, aglio nero fermentato, origano selvatico, basilico, olio EVO biologico</p>
+                    <p class="prezzo"><b>€ 7,00</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Napoletana</h4>
-                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, acciughe, olive nere, capperi, origano, olio EVO</p>
-                    <p class="prezzo">€ 8,50</p>
+                    <h4>Anarchica</h4>
+                    <p class="ingredienti">Pomodoro biologico, mozzarella fior di latte, acciughe, olive nere, capperi selvatici, origano</p>
+                    <p class="prezzo"><b>€ 10,00</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Capricciosa</h4>
-                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, prosciutto cotto, funghi, carciofi, olive nere, olio EVO</p>
-                    <p class="prezzo">€ 9,50</p>
+                    <h4>Rivoluzionaria</h4>
+                    <p class="ingredienti">Pomodoro biologico, mozzarella fior di latte, prosciutto cotto, funghi locali, carciofi freschi, olive taggiasche</p>
+                    <p class="prezzo"><b>€ 11,50</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Diavola</h4>
-                    <p class="ingredienti">Pomodoro San Marzano DOP, mozzarella fior di latte, salame piccante, peperoncino, olio EVO</p>
-                    <p class="prezzo">€ 8,50</p>
+                    <h4>Fuoco Ribelle</h4>
+                    <p class="ingredienti">Pomodoro biologico, mozzarella fior di latte, nduja calabrese, peperoncino habanero, cipolla rossa caramellata</p>
+                    <p class="prezzo"><b>€ 9,50</b></p>
                 </div>
             </div>
             
-            <h3 class="section-title" id="pizze-speciali">Pizze Speciali</h3>
+            <h3 class="section-title" id="pizze-speciali">Pizze Ribelli</h3>
             <div class="menu-container">
                 <div class="menu-item">
-                    <h4>Carrettiera</h4>
-                    <p class="ingredienti">Base bianca, salsiccia sbriciolata, friarielli, provola affumicata, peperoncino, olio EVO</p>
-                    <p class="prezzo">€ 10,50</p>
+                    <h4>Sovversiva Verde</h4>
+                    <p class="ingredienti">Base bianca, pesto di pistacchi, salsiccia vegana, friarielli, provola affumicata, olio EVO al peperoncino</p>
+                    <p class="prezzo"><b>€ 12,50</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Vesuvio</h4>
-                    <p class="ingredienti">Pomodorini del piennolo, bufala DOP (dopo cottura), rucola, scaglie di grana, prosciutto crudo di Parma 24 mesi, olio EVO</p>
-                    <p class="prezzo">€ 12,00</p>
+                    <h4>Insurrezione</h4>
+                    <p class="ingredienti">Base bianca, pomodorini confit, burrata pugliese, prosciutto crudo stagionato, rucola selvatica, scaglie di tartufo</p>
+                    <p class="prezzo"><b>€ 13,50</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Tartufo Reale</h4>
-                    <p class="ingredienti">Base bianca, mozzarella di bufala, funghi porcini, carpaccio di tartufo nero, olio al tartufo</p>
-                    <p class="prezzo">€ 14,50</p>
+                    <h4>Ribellione Forestale</h4>
+                    <p class="ingredienti">Base bianca, mozzarella di bufala, mix di funghi selvatici, tartufo nero, erbe aromatiche di montagna</p>
+                    <p class="prezzo"><b>€ 16,00</b></p>
                 </div>
             </div>
             
             <h3 class="section-title" id="cantina">La Cantina</h3>
             <div class="menu-container">
                 <div class="menu-item">
-                    <h4>Prosecco DOC Valdobbiadene</h4>
-                    <p class="ingredienti">Origine: Veneto</p>
-                    <p class="prezzo">€ 22,00</p>
+                    <h4>Rosso Ribelle</h4>
+                    <p class="ingredienti">Vino naturale da uve biologiche, senza solfiti aggiunti</p>
+                    <p class="prezzo"><b>€ 35,00</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Falanghina del Sannio DOC</h4>
-                    <p class="ingredienti">Origine: Campania</p>
-                    <p class="prezzo">€ 18,00</p>
+                    <h4>Bollicine Sovversive</h4>
+                    <p class="ingredienti">Spumante metodo ancestrale da vitigni autoctoni</p>
+                    <p class="prezzo"><b>€ 32,00</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Amarone della Valpolicella DOCG</h4>
-                    <p class="ingredienti">Origine: Veneto</p>
-                    <p class="prezzo">€ 35,00</p>
+                    <h4>Bianco Rivoluzionario</h4>
+                    <p class="ingredienti">Vino bianco a fermentazione spontanea, macerato sulle bucce</p>
+                    <p class="prezzo"><b>€ 30,00</b></p>
                 </div>
                 
                 <div class="menu-item">
-                    <h4>Primitivo di Manduria DOC</h4>
-                    <p class="ingredienti">Origine: Puglia</p>
-                    <p class="prezzo">€ 20,00</p>
+                    <h4>Birra Artigianale Ribelle</h4>
+                    <p class="ingredienti">Birra non filtrata prodotta con luppoli locali</p>
+                    <p class="prezzo"><b>€ 7,00</b></p>
                 </div>
+            </div>
+        </section>
+
+        <section id="chi-siamo">
+            <h2>Chi Siamo</h2>
+            <div class="chi-siamo">
+                <p>Benvenuti a <b>Pizza Ribelle</b>, dove la tradizione incontra l'innovazione dal <b>2010</b>. La nostra storia inizia quando un gruppo di amici appassionati di gastronomia ha deciso di rivoluzionare il concetto di pizzeria, creando un luogo dove gli ingredienti biologici e locali sono i protagonisti.</p>
+                <br>
+                <p>Nel cuore della città, in un locale ricavato da un'ex officina meccanica, abbiamo creato uno spazio dove la pizza non è solo un piatto, ma una dichiarazione di intenti contro l'uniformità del fast food e delle catene di ristorazione.</p>
+                <br>
+                <p>Il nostro impasto, frutto di ricerca e sperimentazione, <b>fermenta lentamente per 72 ore</b> con lievito madre. Utilizziamo esclusivamente <b>farine biologiche macinate a pietra</b>, pomodori coltivati in permacultura, e formaggi provenienti da piccoli produttori.</p>
+                <br>
+                <p>Nel nostro <b>forno ibrido a legna e gas</b>, che rappresenta la perfetta sintesi tra tradizione e innovazione, le nostre pizze acquisiscono una consistenza e un sapore unici. Il bordo alto e leggero racchiude condimenti freschi e creativi, in un equilibrio perfetto tra rispetto della tradizione e spirito ribelle.</p>
+                <br>
+                <p>Da <b>Pizza Ribelle</b>, non troverete solo un pasto, ma un'esperienza che unisce gastronomia, sostenibilità e cultura. I nostri tavoli, realizzati con legno recuperato, hanno ospitato musicisti indipendenti, artisti di strada, e famiglie che cercano un'alternativa consapevole alla ristorazione convenzionale.</p>
+                <br>
+                <p>Vi invitiamo a scoprire il nostro approccio ribelle alla pizza, dove ogni ingrediente racconta una storia di resistenza alla standardizzazione del gusto e di amore per il territorio e le sue tradizioni gastronomiche.</p>
             </div>
         </section>
 
         <section id="prenota">
             <h2>Prenota</h2>
             <div class="prenota">
-                <p>Riceviamo prenotazioni solo dalle 01:00 alle 03:00</p>
-                <a href="tel:+393331234567" class="tel-link">Chiama ora: +39 333 123 4567</a>
+                <p>Apriamo <b>dalle 18:00 alle 23:30</b>, chiuso il lunedì</p>
+                <p>Per eventi speciali, workshop di pizza e degustazioni di vini naturali, scrivici all'indirizzo eventi@pizzaribelle.it</p>
+                <a href="tel:+393456789012" class="tel-link"><b>Prenota ora: +39 345 678 9012</b></a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Pizzeria Da Luigi - La vera pizza napoletana dal 1985</p>
+        <p>&copy; 2025 Pizza Ribelle - Ribelliamoci al gusto standardizzato dal 2010</p>
     </footer>
 </body>
 </html>
