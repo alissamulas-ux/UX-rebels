@@ -127,7 +127,7 @@ nav ul li a:hover {
 }
 
 /* Sezioni della pagina */
-section {
+section { 
     padding: 70px 0;
     border-bottom: 1px solid #e9ecef;
 }
@@ -260,6 +260,10 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;
+}
+
+.mail-link {
+    color:#5a3921;
 }
 
 .tel-link:hover {
